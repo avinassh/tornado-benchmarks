@@ -1,0 +1,18 @@
+<html>	 
+<head>
+	<title>{% block title %}Pointless Tornado Benchmark{% end %}</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css" />
+	<link rel="stylesheet" href="{{ static_url("css/style.css") }}" />
+</head>
+<body>
+	<div id="container">
+		{% block body %}
+			<img src="{{ blog_post['image'] }}">
+			<h1>{{ blog_post['title'] }}</h1>
+			<p>{{ blog_post['post'] }}</p>
+			<p>{% raw blog_post['footnote'] %}</p>
+		{% end %}
+	</div>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
