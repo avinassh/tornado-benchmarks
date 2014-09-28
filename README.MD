@@ -2,7 +2,7 @@
 
 This is a simple app, like a blog, displays blog post retrieving from database. I used MongoDB as data store and Tornado for routing and templating. Tornado is running behind an nginx proxy.
 
-This is how it looks once loaded: http://i.imgur.com/y3XiAMr.png
+This is how it looks once loaded: ![image](http://i.imgur.com/y3XiAMr.png)
 
 There are 3 apps (or Tornado servers). They are:
 
